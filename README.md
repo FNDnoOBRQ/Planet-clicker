@@ -39,4 +39,4 @@ Made by FNDnoOBRQ
 ```bash
 git clone https://github.com/FNDnoOBRQ/planetary-clicker.git
 cd planetary-clicker
-open index.html
+open c.html

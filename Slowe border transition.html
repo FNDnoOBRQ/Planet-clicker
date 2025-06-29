@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;;
+        }
+        .button-container{
+            position: relative;
+        }
+        .btn{
+            padding: 15px;
+            font-size: 18px;
+            border: none;
+            background-color: white;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-border{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 4px solid transparent;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+        .btn:active .btn-border{
+            animation:  fill-border 2s linear forwards;
+        }
+        @keyframes fill-border{
+            0% {border-color: transparent; }
+            25% {border-top-color: #1520A6; }
+            50% {
+                border-right-color: #1520A6;
+                border-top-color: #1520A6; }
+            75% {
+                border-bottom-color: #1520A6;
+                border-top-color: #1520A6;
+                border-right-color: #1520A6;}
+            100% {
+                border-bottom-color: #1520A6;
+                border-top-color: #1520A6;
+                border-right-color: #1520A6;
+                border-left-color: #1520A6;}
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="button-container">
+        <button class="btn">
+            Click and hold
+            <div class="btn-border"></div>
+        </button>
+    </div>
+</body>
+</html>

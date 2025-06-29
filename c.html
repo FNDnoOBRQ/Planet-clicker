@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="c.css">
+    <title>Planet clicker</title>
+</head>
+<body>
+    <img id="space" src="bg.jpg">
+    <audio id="StarWars" src="imperial_march2.mp3"></audio>
+    <div id="somethingholder" class="somethingholder">
+        
+    </div>
+    <h2 id="score">Score: </h2>
+    <p id="scoreCount"></p>
+    <aside id="achievement"></aside>
+    <footer id="shop">
+        <button id="Autoclicker" onclick="auto()"></button>
+        <button id="morePower" onclick="increase()"></button>
+        <button id="nextLevel" onclick="levelUp()"></button>
+        <button id="buyTheGame" onclick="over()"></button>
+        <button id="restart">
+            Reset points
+            <div id="restart-border"></div>
+        </button>
+    </footer>
+    <script src="c.js"></script>
+</body>
+</html>
